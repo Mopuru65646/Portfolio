@@ -76,7 +76,7 @@ section {
 
 }
 .home{
-    background:url(images/home.jpg) no-repeat;
+    /*background:url(images/home.jpg) no-repeat;*/
     background-size: cover;
     background-position: center;
 }
@@ -203,7 +203,7 @@ section {
 }
 
 .home-imgHover:hover{ 
-     background: var(--bg-color);
+     /*background: var(--bg-color);*/
     opacity: .8;
 }
 .about{
