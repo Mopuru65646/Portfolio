@@ -7,10 +7,7 @@ let navbar = document.querySelector('.navbar');
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-
 }
-
-
 
 // Scroll sections
 let sections = document.querySelectorAll('section');
@@ -27,11 +24,22 @@ window.onscroll = () => {
             // active navbar links
             navLinks.forEach(link => {
                 link.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
-            document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+        //    active section for Animation on scroll 
+        sec.classList.add('show-animate');
+        }
+        // if Want to use animation that repeats on scroll use this 
+        else {
+            sec.classList.add('show-animate');
         }
     });
-    // // sticky Headers
-    // let header = document.querySelector('header');
-    // header.classList.toggle('sticky', window.scrollY > 100);
+    // sticky Headers
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
+// remove toggle icon and navabr when clcik navbar navLinks(scroll)
+menuIcon.classList.remove('bx-x');
+navbar.classList.remove('active');
+
 };
+
