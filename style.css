@@ -700,6 +700,14 @@ width: 80%;
     .home-imgHover {
         pointer-events: none;
     }
+    .skills .skills-row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .skills-column {
+    flex: 1 1 100%;
+  }
 }
 
 @media (max-width: 520px){
