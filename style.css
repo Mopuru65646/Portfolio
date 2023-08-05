@@ -80,9 +80,9 @@ section {
 
 }
 .home{
-/* background:url(images/home.jpg) no-repeat; */
+/* background:url(images/home.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 .home-content{
     max-width: 60rem;
@@ -129,9 +129,8 @@ section {
     animation-delay: 2s;
 }
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin: 2rem 0 4rem;
-    text-align: center;
 }
 .btn-box {
     display: flex;
